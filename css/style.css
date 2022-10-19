@@ -1,0 +1,238 @@
+/* general styles */
+body {
+  background-color: #494C55;
+}
+/* general styles */
+body2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  background: #494C55;
+}
+
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform 1s ease-in-out, box-shadow .7s ease-in-out;
+}
+
+.front, .back {
+  background: black;
+}
+.front, .page1, .page3, .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back, .page2, .page4, .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.page1 {
+  background: #fff0a4;
+}
+
+.page2 {
+  background: #fff0a4;
+}
+
+.page3 {
+  background: #fff3b6;
+}
+
+.page4 {
+  background: #fff3b6;
+}
+
+.page5 {
+  background: #fffadc;
+}
+
+.page6 {
+  background: #fffadc;
+}
+
+.book:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+
+
+
+
+
+.container {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+img {
+  border-radius: 0%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* nav bar */
+nav {
+  background-color: #494C55;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+nav li {
+  padding: 10px 60px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: deepskyblue;
+  text-decoration: line-through;
+}
+
+/* header section */
+header {
+  background: linear-gradient(180deg, darkgray, rgb(55, 55, 55));
+  font-size: 25px;
+  padding: 15% 10%;
+}
+
+header h1 span {
+  color: darkgreen;
+  font-size: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+header h1 span:hover {
+  color: white;
+}
+
+/* about me section */
+.about {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+    url("../images/background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* my skills section */
+.skills ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.skills li {
+  background-color: darkgreen;
+  box-shadow: 20px 20px 1px 2px rgba(55, 55, 55, 1);
+  font-size: 35px;
+  margin: 35px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* my work  */
+.work {
+  background-color: #bdd5ff;
+}
+
+.work-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.work-items img {
+  margin-bottom: 30px;
+}
+
+/* footer */
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .svg-inline--fa {
+  color: salmon;
+  font-size: 65px;
+}
+
+footer .svg-inline--fa:hover {
+  color: #3c778a;
+}
+
+.onion {
+  width: 50px;
+}
+
